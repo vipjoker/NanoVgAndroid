@@ -1,0 +1,3 @@
+/home/omak/Downloads/android-nanovg-sample-master/app/.externalNativeBuild/cmake/debug/armeabi/CMakeFiles/edit_cache.dir
+/home/omak/Downloads/android-nanovg-sample-master/app/.externalNativeBuild/cmake/debug/armeabi/CMakeFiles/rebuild_cache.dir
+/home/omak/Downloads/android-nanovg-sample-master/app/.externalNativeBuild/cmake/debug/armeabi/CMakeFiles/gl2jni.dir

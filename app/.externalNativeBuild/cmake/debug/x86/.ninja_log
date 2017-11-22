@@ -1,0 +1,6 @@
+# ninja log v5
+0	148	0	CMakeFiles/gl2jni.dir/gl_code.cpp.o	9bad33b09b96b840
+0	501	0	CMakeFiles/gl2jni.dir/nanovg/nanovg.c.o	eab48452e7871f21
+501	555	0	/home/omak/Downloads/android-nanovg-sample-master/app/build/intermediates/cmake/debug/obj/x86/libgl2jni.so	d05933d28b12c0a5
+1	283	0	CMakeFiles/gl2jni.dir/gl_code.cpp.o	9bad33b09b96b840
+283	329	0	/home/omak/Downloads/android-nanovg-sample-master/app/build/intermediates/cmake/debug/obj/x86/libgl2jni.so	d05933d28b12c0a5
