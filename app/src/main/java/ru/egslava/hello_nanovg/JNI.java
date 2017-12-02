@@ -18,6 +18,8 @@ package ru.egslava.hello_nanovg;
 
 // Wrapper for native library
 
+import android.content.res.AssetManager;
+
 public class JNI {
 
     static {
@@ -28,10 +30,18 @@ public class JNI {
     public static native void setRotation(float rotation);
     public static native void setTranslation(float x, float y);
 
+    public static native void onTouchBegin(float x,float y);
+    public static native void onTouchMove(float x,float y);
+    public static native void onTouchEnd();
+
     /**
      * @param width the current view width
      * @param height the current view height
      */
     public static native void init(int width, int height);
-    public static native void step();
+    public static native void step(float dt);
+    public static native void setAssets(AssetManager manager);
+    public static native void sendFontPath(String string);
+    public static native void allocate();
+    public static native void remove();
 }

@@ -7,12 +7,17 @@ apply plugin: 'com.android.application'
 
         defaultConfig{
             applicationId    = "ru.egslava.hello_nanovg"
-            minSdkVersion 21
+            minSdkVersion 16
             targetSdkVersion 25
             versionCode 1
             versionName "1.0"
 
-
+            externalNativeBuild {
+                cmake {
+                    cppFlags "-std=c++11"
+                    arguments "-DANDROID_STL=gnustl_static"
+                }
+            }
 //
 //            externalNativeBuild {
 //                cmake {
@@ -26,12 +31,18 @@ apply plugin: 'com.android.application'
 //        ndk {
 //                abiFilters 'x86', 'x86_64', 'armeabi', 'armeabi-v7a', 'arm64-v8a'
 //            }
+
+
         externalNativeBuild {
             cmake {
                 path 'src/main/cpp/CMakeLists.txt'
 //                arguments '-DANDROID_PLATFORM=android-21',
 //                            '-DANDROID_TOOLCHAIN=clang'
             }
+        }
+        compileOptions {
+            targetCompatibility 1.8
+            sourceCompatibility 1.8
         }
     }
 

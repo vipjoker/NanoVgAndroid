@@ -2,12 +2,12 @@
 {
 	"buildFiles" : 
 	[
-		"/home/omak/Downloads/android-nanovg-sample-master/app/src/main/cpp/CMakeLists.txt"
+		"/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/CMakeLists.txt"
 	],
 	"cFileExtensions" : [ "c" ],
 	"cleanCommands" : 
 	[
-		"/home/omak/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/omak/Downloads/android-nanovg-sample-master/app/.externalNativeBuild/cmake/debug/armeabi --target clean"
+		"/home/oleh/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/oleh/Documents/projects/NanoVgAndroid/app/.externalNativeBuild/cmake/debug/armeabi --target clean"
 	],
 	"cppFileExtensions" : [ "cpp" ],
 	"libraries" : 
@@ -16,33 +16,39 @@
 		{
 			"abi" : "armeabi",
 			"artifactName" : "gl2jni",
-			"buildCommand" : "/home/omak/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/omak/Downloads/android-nanovg-sample-master/app/.externalNativeBuild/cmake/debug/armeabi --target gl2jni",
+			"buildCommand" : "/home/oleh/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/oleh/Documents/projects/NanoVgAndroid/app/.externalNativeBuild/cmake/debug/armeabi --target gl2jni",
 			"buildType" : "debug",
 			"files" : 
 			[
 				
 				{
-					"flags" : "  --target=armv5te-none-linux-androideabi --gcc-toolchain=/home/omak/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64 --sysroot=/home/omak/Android/Sdk/ndk-bundle/sysroot -Dgl2jni_EXPORTS  -isystem /home/omak/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv5te -mtune=xscale -msoft-float -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
-					"src" : "/home/omak/Downloads/android-nanovg-sample-master/app/src/main/cpp/nanovg/nanovg.c",
-					"workingDirectory" : "/home/omak/Downloads/android-nanovg-sample-master/app/.externalNativeBuild/cmake/debug/armeabi"
+					"flags" : "  --target=armv5te-none-linux-androideabi --gcc-toolchain=/home/oleh/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64 --sysroot=/home/oleh/Android/Sdk/ndk-bundle/platforms/android-21/arch-arm -Dgl2jni_EXPORTS -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/nanovg  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv5te -mtune=xscale -msoft-float -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv5te -mtune=xscale -msoft-float -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/nanovg/nanovg.c",
+					"workingDirectory" : "/home/oleh/Documents/projects/NanoVgAndroid/app/.externalNativeBuild/cmake/debug/armeabi"
 				},
 				
 				{
-					"flags" : "  --target=armv5te-none-linux-androideabi --gcc-toolchain=/home/omak/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64 --sysroot=/home/omak/Android/Sdk/ndk-bundle/sysroot  -Dgl2jni_EXPORTS -isystem /home/omak/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /home/omak/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi/include -isystem /home/omak/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward  -isystem /home/omak/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv5te -mtune=xscale -msoft-float -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC    -c ",
-					"src" : "/home/omak/Downloads/android-nanovg-sample-master/app/src/main/cpp/gl_code.cpp",
-					"workingDirectory" : "/home/omak/Downloads/android-nanovg-sample-master/app/.externalNativeBuild/cmake/debug/armeabi"
+					"flags" : "  --target=armv5te-none-linux-androideabi --gcc-toolchain=/home/oleh/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64 --sysroot=/home/oleh/Android/Sdk/ndk-bundle/platforms/android-21/arch-arm  -Dgl2jni_EXPORTS -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/nanovg -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv5te -mtune=xscale -msoft-float -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv5te -mtune=xscale -msoft-float -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security   -O0 -fno-limit-debug-info -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/gl_code.cpp",
+					"workingDirectory" : "/home/oleh/Documents/projects/NanoVgAndroid/app/.externalNativeBuild/cmake/debug/armeabi"
+				},
+				
+				{
+					"flags" : "  --target=armv5te-none-linux-androideabi --gcc-toolchain=/home/oleh/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64 --sysroot=/home/oleh/Android/Sdk/ndk-bundle/platforms/android-21/arch-arm -Dgl2jni_EXPORTS -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/nanovg  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv5te -mtune=xscale -msoft-float -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv5te -mtune=xscale -msoft-float -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/android_fopen.c",
+					"workingDirectory" : "/home/oleh/Documents/projects/NanoVgAndroid/app/.externalNativeBuild/cmake/debug/armeabi"
 				}
 			],
-			"output" : "/home/omak/Downloads/android-nanovg-sample-master/app/build/intermediates/cmake/debug/obj/armeabi/libgl2jni.so",
-			"toolchain" : "3378249923854918374"
+			"output" : "/home/oleh/Documents/projects/NanoVgAndroid/app/build/intermediates/cmake/debug/obj/armeabi/libgl2jni.so",
+			"toolchain" : "16856146430782194272"
 		}
 	},
 	"toolchains" : 
 	{
-		"3378249923854918374" : 
+		"16856146430782194272" : 
 		{
-			"cCompilerExecutable" : "/home/omak/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang",
-			"cppCompilerExecutable" : "/home/omak/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++"
+			"cCompilerExecutable" : "/home/oleh/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang",
+			"cppCompilerExecutable" : "/home/oleh/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++"
 		}
 	}
 }
