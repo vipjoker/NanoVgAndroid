@@ -49,80 +49,88 @@ build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
   restat = 1
 build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
-# Object build statements for SHARED_LIBRARY target gl2jni
+# Object build statements for SHARED_LIBRARY target nanoLib
 
 
 #############################################
-# Order-only phony target for gl2jni
+# Order-only phony target for nanoLib
 
-build cmake_order_depends_target_gl2jni: phony || Box2D/libbox2d.a
-build CMakeFiles/gl2jni.dir/nanovg/nanovg.c.o: C_COMPILER__gl2jni /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/nanovg/nanovg.c || cmake_order_depends_target_gl2jni
-  DEFINES = -Dgl2jni_EXPORTS
-  DEP_FILE = CMakeFiles/gl2jni.dir/nanovg/nanovg.c.o.d
-  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Oz -DNDEBUG  -fPIC
+build cmake_order_depends_target_nanoLib: phony || Box2D/libbox2d.a
+build CMakeFiles/nanoLib.dir/nanovg/nanovg.c.o: C_COMPILER__nanoLib /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/nanovg/nanovg.c || cmake_order_depends_target_nanoLib
+  DEFINES = -DnanoLib_EXPORTS
+  DEP_FILE = CMakeFiles/nanoLib.dir/nanovg/nanovg.c.o.d
+  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Os -DNDEBUG  -fPIC
   INCLUDES = -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/nanovg -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/. -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/include
   IN_ABS = /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/nanovg/nanovg.c
-  OBJECT_DIR = CMakeFiles/gl2jni.dir
-  OBJECT_FILE_DIR = CMakeFiles/gl2jni.dir/nanovg
-build CMakeFiles/gl2jni.dir/gl_code.cpp.o: CXX_COMPILER__gl2jni /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/gl_code.cpp || cmake_order_depends_target_gl2jni
-  DEFINES = -Dgl2jni_EXPORTS
-  DEP_FILE = CMakeFiles/gl2jni.dir/gl_code.cpp.o.d
-  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Oz -DNDEBUG  -fPIC
+  OBJECT_DIR = CMakeFiles/nanoLib.dir
+  OBJECT_FILE_DIR = CMakeFiles/nanoLib.dir/nanovg
+build CMakeFiles/nanoLib.dir/gl_code.cpp.o: CXX_COMPILER__nanoLib /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/gl_code.cpp || cmake_order_depends_target_nanoLib
+  DEFINES = -DnanoLib_EXPORTS
+  DEP_FILE = CMakeFiles/nanoLib.dir/gl_code.cpp.o.d
+  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Os -DNDEBUG  -fPIC
   INCLUDES = -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/nanovg -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/. -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward
   IN_ABS = /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/gl_code.cpp
-  OBJECT_DIR = CMakeFiles/gl2jni.dir
-  OBJECT_FILE_DIR = CMakeFiles/gl2jni.dir
-build CMakeFiles/gl2jni.dir/src/b2Renderer.cpp.o: CXX_COMPILER__gl2jni /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/src/b2Renderer.cpp || cmake_order_depends_target_gl2jni
-  DEFINES = -Dgl2jni_EXPORTS
-  DEP_FILE = CMakeFiles/gl2jni.dir/src/b2Renderer.cpp.o.d
-  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Oz -DNDEBUG  -fPIC
+  OBJECT_DIR = CMakeFiles/nanoLib.dir
+  OBJECT_FILE_DIR = CMakeFiles/nanoLib.dir
+build CMakeFiles/nanoLib.dir/src/b2Renderer.cpp.o: CXX_COMPILER__nanoLib /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/src/b2Renderer.cpp || cmake_order_depends_target_nanoLib
+  DEFINES = -DnanoLib_EXPORTS
+  DEP_FILE = CMakeFiles/nanoLib.dir/src/b2Renderer.cpp.o.d
+  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Os -DNDEBUG  -fPIC
   INCLUDES = -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/nanovg -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/. -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward
   IN_ABS = /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/src/b2Renderer.cpp
-  OBJECT_DIR = CMakeFiles/gl2jni.dir
-  OBJECT_FILE_DIR = CMakeFiles/gl2jni.dir/src
-build CMakeFiles/gl2jni.dir/src/bodyCreator.cpp.o: CXX_COMPILER__gl2jni /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/src/bodyCreator.cpp || cmake_order_depends_target_gl2jni
-  DEFINES = -Dgl2jni_EXPORTS
-  DEP_FILE = CMakeFiles/gl2jni.dir/src/bodyCreator.cpp.o.d
-  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Oz -DNDEBUG  -fPIC
+  OBJECT_DIR = CMakeFiles/nanoLib.dir
+  OBJECT_FILE_DIR = CMakeFiles/nanoLib.dir/src
+build CMakeFiles/nanoLib.dir/src/bodyCreator.cpp.o: CXX_COMPILER__nanoLib /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/src/bodyCreator.cpp || cmake_order_depends_target_nanoLib
+  DEFINES = -DnanoLib_EXPORTS
+  DEP_FILE = CMakeFiles/nanoLib.dir/src/bodyCreator.cpp.o.d
+  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Os -DNDEBUG  -fPIC
   INCLUDES = -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/nanovg -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/. -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward
   IN_ABS = /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/src/bodyCreator.cpp
-  OBJECT_DIR = CMakeFiles/gl2jni.dir
-  OBJECT_FILE_DIR = CMakeFiles/gl2jni.dir/src
-build CMakeFiles/gl2jni.dir/src/NvgSample.cpp.o: CXX_COMPILER__gl2jni /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/src/NvgSample.cpp || cmake_order_depends_target_gl2jni
-  DEFINES = -Dgl2jni_EXPORTS
-  DEP_FILE = CMakeFiles/gl2jni.dir/src/NvgSample.cpp.o.d
-  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Oz -DNDEBUG  -fPIC
+  OBJECT_DIR = CMakeFiles/nanoLib.dir
+  OBJECT_FILE_DIR = CMakeFiles/nanoLib.dir/src
+build CMakeFiles/nanoLib.dir/src/NvgSample.cpp.o: CXX_COMPILER__nanoLib /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/src/NvgSample.cpp || cmake_order_depends_target_nanoLib
+  DEFINES = -DnanoLib_EXPORTS
+  DEP_FILE = CMakeFiles/nanoLib.dir/src/NvgSample.cpp.o.d
+  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Os -DNDEBUG  -fPIC
   INCLUDES = -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/nanovg -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/. -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward
   IN_ABS = /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/src/NvgSample.cpp
-  OBJECT_DIR = CMakeFiles/gl2jni.dir
-  OBJECT_FILE_DIR = CMakeFiles/gl2jni.dir/src
-build CMakeFiles/gl2jni.dir/src/Shapes.cpp.o: CXX_COMPILER__gl2jni /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/src/Shapes.cpp || cmake_order_depends_target_gl2jni
-  DEFINES = -Dgl2jni_EXPORTS
-  DEP_FILE = CMakeFiles/gl2jni.dir/src/Shapes.cpp.o.d
-  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Oz -DNDEBUG  -fPIC
+  OBJECT_DIR = CMakeFiles/nanoLib.dir
+  OBJECT_FILE_DIR = CMakeFiles/nanoLib.dir/src
+build CMakeFiles/nanoLib.dir/src/Shapes.cpp.o: CXX_COMPILER__nanoLib /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/src/Shapes.cpp || cmake_order_depends_target_nanoLib
+  DEFINES = -DnanoLib_EXPORTS
+  DEP_FILE = CMakeFiles/nanoLib.dir/src/Shapes.cpp.o.d
+  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Os -DNDEBUG  -fPIC
   INCLUDES = -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/nanovg -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/. -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward
   IN_ABS = /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/src/Shapes.cpp
-  OBJECT_DIR = CMakeFiles/gl2jni.dir
-  OBJECT_FILE_DIR = CMakeFiles/gl2jni.dir/src
+  OBJECT_DIR = CMakeFiles/nanoLib.dir
+  OBJECT_FILE_DIR = CMakeFiles/nanoLib.dir/src
+build CMakeFiles/nanoLib.dir/android_fopen.c.o: C_COMPILER__nanoLib /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/android_fopen.c || cmake_order_depends_target_nanoLib
+  DEFINES = -DnanoLib_EXPORTS
+  DEP_FILE = CMakeFiles/nanoLib.dir/android_fopen.c.o.d
+  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Os -DNDEBUG  -fPIC
+  INCLUDES = -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/nanovg -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/. -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/include
+  IN_ABS = /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/android_fopen.c
+  OBJECT_DIR = CMakeFiles/nanoLib.dir
+  OBJECT_FILE_DIR = CMakeFiles/nanoLib.dir
 
 # =============================================================================
-# Link build statements for SHARED_LIBRARY target gl2jni
+# Link build statements for SHARED_LIBRARY target nanoLib
 
 
 #############################################
-# Link the shared library /home/oleh/Documents/projects/NanoVgAndroid/app/build/intermediates/cmake/release/obj/armeabi-v7a/libgl2jni.so
+# Link the shared library /home/oleh/Documents/projects/NanoVgAndroid/app/build/intermediates/cmake/release/obj/armeabi-v7a/libnanoLib.so
 
-build /home/oleh/Documents/projects/NanoVgAndroid/app/build/intermediates/cmake/release/obj/armeabi-v7a/libgl2jni.so: CXX_SHARED_LIBRARY_LINKER__gl2jni CMakeFiles/gl2jni.dir/nanovg/nanovg.c.o CMakeFiles/gl2jni.dir/gl_code.cpp.o CMakeFiles/gl2jni.dir/src/b2Renderer.cpp.o CMakeFiles/gl2jni.dir/src/bodyCreator.cpp.o CMakeFiles/gl2jni.dir/src/NvgSample.cpp.o CMakeFiles/gl2jni.dir/src/Shapes.cpp.o | Box2D/libbox2d.a || Box2D/libbox2d.a
-  LANGUAGE_COMPILE_FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Oz -DNDEBUG
+build /home/oleh/Documents/projects/NanoVgAndroid/app/build/intermediates/cmake/release/obj/armeabi-v7a/libnanoLib.so: CXX_SHARED_LIBRARY_LINKER__nanoLib CMakeFiles/nanoLib.dir/nanovg/nanovg.c.o CMakeFiles/nanoLib.dir/gl_code.cpp.o CMakeFiles/nanoLib.dir/src/b2Renderer.cpp.o CMakeFiles/nanoLib.dir/src/bodyCreator.cpp.o CMakeFiles/nanoLib.dir/src/NvgSample.cpp.o CMakeFiles/nanoLib.dir/src/Shapes.cpp.o CMakeFiles/nanoLib.dir/android_fopen.c.o | Box2D/libbox2d.a || Box2D/libbox2d.a
+  LANGUAGE_COMPILE_FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Os -DNDEBUG
   LINK_FLAGS = -Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libatomic.a --sysroot /home/oleh/Android/Sdk/ndk-bundle/platforms/android-16/arch-arm -Wl,--build-id -Wl,--warn-shared-textrel -Wl,--fatal-warnings -Wl,--fix-cortex-a8 -Wl,--no-undefined -Wl,-z,noexecstack -Qunused-arguments -Wl,-z,relro -Wl,-z,now
   LINK_LIBRARIES = Box2D/libbox2d.a -landroid -lGLESv2 -llog -latomic -lm "/home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/libgnustl_static.a"
-  OBJECT_DIR = CMakeFiles/gl2jni.dir
+  OBJECT_DIR = CMakeFiles/nanoLib.dir
   POST_BUILD = :
   PRE_LINK = :
-  SONAME = libgl2jni.so
+  SONAME = libnanoLib.so
   SONAME_FLAG = -Wl,-soname,
-  TARGET_FILE = /home/oleh/Documents/projects/NanoVgAndroid/app/build/intermediates/cmake/release/obj/armeabi-v7a/libgl2jni.so
-  TARGET_PDB = gl2jni.so.dbg
+  TARGET_FILE = /home/oleh/Documents/projects/NanoVgAndroid/app/build/intermediates/cmake/release/obj/armeabi-v7a/libnanoLib.so
+  TARGET_PDB = nanoLib.so.dbg
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
 # /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/CMakeLists.txt
@@ -133,322 +141,322 @@ build /home/oleh/Documents/projects/NanoVgAndroid/app/build/intermediates/cmake/
 
 build Box2D/CMakeFiles/box2d.dir/Collision/Shapes/b2ChainShape.cpp.o: CXX_COMPILER__box2d /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/Collision/Shapes/b2ChainShape.cpp
   DEP_FILE = Box2D/CMakeFiles/box2d.dir/Collision/Shapes/b2ChainShape.cpp.o.d
-  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Oz -DNDEBUG  -fPIC
+  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Os -DNDEBUG  -fPIC
   INCLUDES = -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/nanovg -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/. -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/include -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/.. -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward
   IN_ABS = /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/Collision/Shapes/b2ChainShape.cpp
   OBJECT_DIR = Box2D/CMakeFiles/box2d.dir
   OBJECT_FILE_DIR = Box2D/CMakeFiles/box2d.dir/Collision/Shapes
 build Box2D/CMakeFiles/box2d.dir/Collision/Shapes/b2CircleShape.cpp.o: CXX_COMPILER__box2d /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/Collision/Shapes/b2CircleShape.cpp
   DEP_FILE = Box2D/CMakeFiles/box2d.dir/Collision/Shapes/b2CircleShape.cpp.o.d
-  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Oz -DNDEBUG  -fPIC
+  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Os -DNDEBUG  -fPIC
   INCLUDES = -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/nanovg -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/. -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/include -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/.. -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward
   IN_ABS = /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/Collision/Shapes/b2CircleShape.cpp
   OBJECT_DIR = Box2D/CMakeFiles/box2d.dir
   OBJECT_FILE_DIR = Box2D/CMakeFiles/box2d.dir/Collision/Shapes
 build Box2D/CMakeFiles/box2d.dir/Collision/Shapes/b2EdgeShape.cpp.o: CXX_COMPILER__box2d /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/Collision/Shapes/b2EdgeShape.cpp
   DEP_FILE = Box2D/CMakeFiles/box2d.dir/Collision/Shapes/b2EdgeShape.cpp.o.d
-  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Oz -DNDEBUG  -fPIC
+  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Os -DNDEBUG  -fPIC
   INCLUDES = -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/nanovg -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/. -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/include -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/.. -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward
   IN_ABS = /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/Collision/Shapes/b2EdgeShape.cpp
   OBJECT_DIR = Box2D/CMakeFiles/box2d.dir
   OBJECT_FILE_DIR = Box2D/CMakeFiles/box2d.dir/Collision/Shapes
 build Box2D/CMakeFiles/box2d.dir/Collision/Shapes/b2PolygonShape.cpp.o: CXX_COMPILER__box2d /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/Collision/Shapes/b2PolygonShape.cpp
   DEP_FILE = Box2D/CMakeFiles/box2d.dir/Collision/Shapes/b2PolygonShape.cpp.o.d
-  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Oz -DNDEBUG  -fPIC
+  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Os -DNDEBUG  -fPIC
   INCLUDES = -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/nanovg -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/. -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/include -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/.. -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward
   IN_ABS = /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/Collision/Shapes/b2PolygonShape.cpp
   OBJECT_DIR = Box2D/CMakeFiles/box2d.dir
   OBJECT_FILE_DIR = Box2D/CMakeFiles/box2d.dir/Collision/Shapes
 build Box2D/CMakeFiles/box2d.dir/Collision/b2BroadPhase.cpp.o: CXX_COMPILER__box2d /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/Collision/b2BroadPhase.cpp
   DEP_FILE = Box2D/CMakeFiles/box2d.dir/Collision/b2BroadPhase.cpp.o.d
-  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Oz -DNDEBUG  -fPIC
+  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Os -DNDEBUG  -fPIC
   INCLUDES = -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/nanovg -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/. -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/include -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/.. -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward
   IN_ABS = /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/Collision/b2BroadPhase.cpp
   OBJECT_DIR = Box2D/CMakeFiles/box2d.dir
   OBJECT_FILE_DIR = Box2D/CMakeFiles/box2d.dir/Collision
 build Box2D/CMakeFiles/box2d.dir/Collision/b2CollideCircle.cpp.o: CXX_COMPILER__box2d /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/Collision/b2CollideCircle.cpp
   DEP_FILE = Box2D/CMakeFiles/box2d.dir/Collision/b2CollideCircle.cpp.o.d
-  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Oz -DNDEBUG  -fPIC
+  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Os -DNDEBUG  -fPIC
   INCLUDES = -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/nanovg -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/. -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/include -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/.. -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward
   IN_ABS = /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/Collision/b2CollideCircle.cpp
   OBJECT_DIR = Box2D/CMakeFiles/box2d.dir
   OBJECT_FILE_DIR = Box2D/CMakeFiles/box2d.dir/Collision
 build Box2D/CMakeFiles/box2d.dir/Collision/b2CollideEdge.cpp.o: CXX_COMPILER__box2d /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/Collision/b2CollideEdge.cpp
   DEP_FILE = Box2D/CMakeFiles/box2d.dir/Collision/b2CollideEdge.cpp.o.d
-  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Oz -DNDEBUG  -fPIC
+  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Os -DNDEBUG  -fPIC
   INCLUDES = -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/nanovg -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/. -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/include -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/.. -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward
   IN_ABS = /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/Collision/b2CollideEdge.cpp
   OBJECT_DIR = Box2D/CMakeFiles/box2d.dir
   OBJECT_FILE_DIR = Box2D/CMakeFiles/box2d.dir/Collision
 build Box2D/CMakeFiles/box2d.dir/Collision/b2CollidePolygon.cpp.o: CXX_COMPILER__box2d /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/Collision/b2CollidePolygon.cpp
   DEP_FILE = Box2D/CMakeFiles/box2d.dir/Collision/b2CollidePolygon.cpp.o.d
-  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Oz -DNDEBUG  -fPIC
+  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Os -DNDEBUG  -fPIC
   INCLUDES = -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/nanovg -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/. -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/include -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/.. -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward
   IN_ABS = /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/Collision/b2CollidePolygon.cpp
   OBJECT_DIR = Box2D/CMakeFiles/box2d.dir
   OBJECT_FILE_DIR = Box2D/CMakeFiles/box2d.dir/Collision
 build Box2D/CMakeFiles/box2d.dir/Collision/b2Collision.cpp.o: CXX_COMPILER__box2d /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/Collision/b2Collision.cpp
   DEP_FILE = Box2D/CMakeFiles/box2d.dir/Collision/b2Collision.cpp.o.d
-  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Oz -DNDEBUG  -fPIC
+  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Os -DNDEBUG  -fPIC
   INCLUDES = -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/nanovg -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/. -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/include -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/.. -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward
   IN_ABS = /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/Collision/b2Collision.cpp
   OBJECT_DIR = Box2D/CMakeFiles/box2d.dir
   OBJECT_FILE_DIR = Box2D/CMakeFiles/box2d.dir/Collision
 build Box2D/CMakeFiles/box2d.dir/Collision/b2Distance.cpp.o: CXX_COMPILER__box2d /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/Collision/b2Distance.cpp
   DEP_FILE = Box2D/CMakeFiles/box2d.dir/Collision/b2Distance.cpp.o.d
-  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Oz -DNDEBUG  -fPIC
+  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Os -DNDEBUG  -fPIC
   INCLUDES = -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/nanovg -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/. -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/include -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/.. -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward
   IN_ABS = /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/Collision/b2Distance.cpp
   OBJECT_DIR = Box2D/CMakeFiles/box2d.dir
   OBJECT_FILE_DIR = Box2D/CMakeFiles/box2d.dir/Collision
 build Box2D/CMakeFiles/box2d.dir/Collision/b2DynamicTree.cpp.o: CXX_COMPILER__box2d /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/Collision/b2DynamicTree.cpp
   DEP_FILE = Box2D/CMakeFiles/box2d.dir/Collision/b2DynamicTree.cpp.o.d
-  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Oz -DNDEBUG  -fPIC
+  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Os -DNDEBUG  -fPIC
   INCLUDES = -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/nanovg -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/. -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/include -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/.. -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward
   IN_ABS = /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/Collision/b2DynamicTree.cpp
   OBJECT_DIR = Box2D/CMakeFiles/box2d.dir
   OBJECT_FILE_DIR = Box2D/CMakeFiles/box2d.dir/Collision
 build Box2D/CMakeFiles/box2d.dir/Collision/b2TimeOfImpact.cpp.o: CXX_COMPILER__box2d /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/Collision/b2TimeOfImpact.cpp
   DEP_FILE = Box2D/CMakeFiles/box2d.dir/Collision/b2TimeOfImpact.cpp.o.d
-  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Oz -DNDEBUG  -fPIC
+  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Os -DNDEBUG  -fPIC
   INCLUDES = -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/nanovg -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/. -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/include -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/.. -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward
   IN_ABS = /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/Collision/b2TimeOfImpact.cpp
   OBJECT_DIR = Box2D/CMakeFiles/box2d.dir
   OBJECT_FILE_DIR = Box2D/CMakeFiles/box2d.dir/Collision
 build Box2D/CMakeFiles/box2d.dir/Common/b2BlockAllocator.cpp.o: CXX_COMPILER__box2d /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/Common/b2BlockAllocator.cpp
   DEP_FILE = Box2D/CMakeFiles/box2d.dir/Common/b2BlockAllocator.cpp.o.d
-  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Oz -DNDEBUG  -fPIC
+  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Os -DNDEBUG  -fPIC
   INCLUDES = -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/nanovg -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/. -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/include -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/.. -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward
   IN_ABS = /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/Common/b2BlockAllocator.cpp
   OBJECT_DIR = Box2D/CMakeFiles/box2d.dir
   OBJECT_FILE_DIR = Box2D/CMakeFiles/box2d.dir/Common
 build Box2D/CMakeFiles/box2d.dir/Common/b2Draw.cpp.o: CXX_COMPILER__box2d /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/Common/b2Draw.cpp
   DEP_FILE = Box2D/CMakeFiles/box2d.dir/Common/b2Draw.cpp.o.d
-  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Oz -DNDEBUG  -fPIC
+  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Os -DNDEBUG  -fPIC
   INCLUDES = -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/nanovg -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/. -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/include -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/.. -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward
   IN_ABS = /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/Common/b2Draw.cpp
   OBJECT_DIR = Box2D/CMakeFiles/box2d.dir
   OBJECT_FILE_DIR = Box2D/CMakeFiles/box2d.dir/Common
 build Box2D/CMakeFiles/box2d.dir/Common/b2Math.cpp.o: CXX_COMPILER__box2d /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/Common/b2Math.cpp
   DEP_FILE = Box2D/CMakeFiles/box2d.dir/Common/b2Math.cpp.o.d
-  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Oz -DNDEBUG  -fPIC
+  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Os -DNDEBUG  -fPIC
   INCLUDES = -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/nanovg -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/. -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/include -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/.. -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward
   IN_ABS = /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/Common/b2Math.cpp
   OBJECT_DIR = Box2D/CMakeFiles/box2d.dir
   OBJECT_FILE_DIR = Box2D/CMakeFiles/box2d.dir/Common
 build Box2D/CMakeFiles/box2d.dir/Common/b2Settings.cpp.o: CXX_COMPILER__box2d /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/Common/b2Settings.cpp
   DEP_FILE = Box2D/CMakeFiles/box2d.dir/Common/b2Settings.cpp.o.d
-  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Oz -DNDEBUG  -fPIC
+  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Os -DNDEBUG  -fPIC
   INCLUDES = -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/nanovg -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/. -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/include -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/.. -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward
   IN_ABS = /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/Common/b2Settings.cpp
   OBJECT_DIR = Box2D/CMakeFiles/box2d.dir
   OBJECT_FILE_DIR = Box2D/CMakeFiles/box2d.dir/Common
 build Box2D/CMakeFiles/box2d.dir/Common/b2StackAllocator.cpp.o: CXX_COMPILER__box2d /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/Common/b2StackAllocator.cpp
   DEP_FILE = Box2D/CMakeFiles/box2d.dir/Common/b2StackAllocator.cpp.o.d
-  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Oz -DNDEBUG  -fPIC
+  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Os -DNDEBUG  -fPIC
   INCLUDES = -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/nanovg -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/. -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/include -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/.. -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward
   IN_ABS = /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/Common/b2StackAllocator.cpp
   OBJECT_DIR = Box2D/CMakeFiles/box2d.dir
   OBJECT_FILE_DIR = Box2D/CMakeFiles/box2d.dir/Common
 build Box2D/CMakeFiles/box2d.dir/Common/b2Timer.cpp.o: CXX_COMPILER__box2d /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/Common/b2Timer.cpp
   DEP_FILE = Box2D/CMakeFiles/box2d.dir/Common/b2Timer.cpp.o.d
-  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Oz -DNDEBUG  -fPIC
+  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Os -DNDEBUG  -fPIC
   INCLUDES = -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/nanovg -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/. -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/include -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/.. -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward
   IN_ABS = /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/Common/b2Timer.cpp
   OBJECT_DIR = Box2D/CMakeFiles/box2d.dir
   OBJECT_FILE_DIR = Box2D/CMakeFiles/box2d.dir/Common
 build Box2D/CMakeFiles/box2d.dir/Dynamics/Contacts/b2ChainAndCircleContact.cpp.o: CXX_COMPILER__box2d /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/Dynamics/Contacts/b2ChainAndCircleContact.cpp
   DEP_FILE = Box2D/CMakeFiles/box2d.dir/Dynamics/Contacts/b2ChainAndCircleContact.cpp.o.d
-  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Oz -DNDEBUG  -fPIC
+  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Os -DNDEBUG  -fPIC
   INCLUDES = -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/nanovg -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/. -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/include -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/.. -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward
   IN_ABS = /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/Dynamics/Contacts/b2ChainAndCircleContact.cpp
   OBJECT_DIR = Box2D/CMakeFiles/box2d.dir
   OBJECT_FILE_DIR = Box2D/CMakeFiles/box2d.dir/Dynamics/Contacts
 build Box2D/CMakeFiles/box2d.dir/Dynamics/Contacts/b2ChainAndPolygonContact.cpp.o: CXX_COMPILER__box2d /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/Dynamics/Contacts/b2ChainAndPolygonContact.cpp
   DEP_FILE = Box2D/CMakeFiles/box2d.dir/Dynamics/Contacts/b2ChainAndPolygonContact.cpp.o.d
-  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Oz -DNDEBUG  -fPIC
+  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Os -DNDEBUG  -fPIC
   INCLUDES = -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/nanovg -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/. -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/include -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/.. -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward
   IN_ABS = /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/Dynamics/Contacts/b2ChainAndPolygonContact.cpp
   OBJECT_DIR = Box2D/CMakeFiles/box2d.dir
   OBJECT_FILE_DIR = Box2D/CMakeFiles/box2d.dir/Dynamics/Contacts
 build Box2D/CMakeFiles/box2d.dir/Dynamics/Contacts/b2CircleContact.cpp.o: CXX_COMPILER__box2d /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/Dynamics/Contacts/b2CircleContact.cpp
   DEP_FILE = Box2D/CMakeFiles/box2d.dir/Dynamics/Contacts/b2CircleContact.cpp.o.d
-  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Oz -DNDEBUG  -fPIC
+  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Os -DNDEBUG  -fPIC
   INCLUDES = -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/nanovg -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/. -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/include -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/.. -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward
   IN_ABS = /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/Dynamics/Contacts/b2CircleContact.cpp
   OBJECT_DIR = Box2D/CMakeFiles/box2d.dir
   OBJECT_FILE_DIR = Box2D/CMakeFiles/box2d.dir/Dynamics/Contacts
 build Box2D/CMakeFiles/box2d.dir/Dynamics/Contacts/b2Contact.cpp.o: CXX_COMPILER__box2d /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/Dynamics/Contacts/b2Contact.cpp
   DEP_FILE = Box2D/CMakeFiles/box2d.dir/Dynamics/Contacts/b2Contact.cpp.o.d
-  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Oz -DNDEBUG  -fPIC
+  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Os -DNDEBUG  -fPIC
   INCLUDES = -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/nanovg -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/. -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/include -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/.. -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward
   IN_ABS = /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/Dynamics/Contacts/b2Contact.cpp
   OBJECT_DIR = Box2D/CMakeFiles/box2d.dir
   OBJECT_FILE_DIR = Box2D/CMakeFiles/box2d.dir/Dynamics/Contacts
 build Box2D/CMakeFiles/box2d.dir/Dynamics/Contacts/b2ContactSolver.cpp.o: CXX_COMPILER__box2d /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/Dynamics/Contacts/b2ContactSolver.cpp
   DEP_FILE = Box2D/CMakeFiles/box2d.dir/Dynamics/Contacts/b2ContactSolver.cpp.o.d
-  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Oz -DNDEBUG  -fPIC
+  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Os -DNDEBUG  -fPIC
   INCLUDES = -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/nanovg -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/. -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/include -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/.. -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward
   IN_ABS = /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/Dynamics/Contacts/b2ContactSolver.cpp
   OBJECT_DIR = Box2D/CMakeFiles/box2d.dir
   OBJECT_FILE_DIR = Box2D/CMakeFiles/box2d.dir/Dynamics/Contacts
 build Box2D/CMakeFiles/box2d.dir/Dynamics/Contacts/b2EdgeAndCircleContact.cpp.o: CXX_COMPILER__box2d /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/Dynamics/Contacts/b2EdgeAndCircleContact.cpp
   DEP_FILE = Box2D/CMakeFiles/box2d.dir/Dynamics/Contacts/b2EdgeAndCircleContact.cpp.o.d
-  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Oz -DNDEBUG  -fPIC
+  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Os -DNDEBUG  -fPIC
   INCLUDES = -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/nanovg -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/. -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/include -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/.. -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward
   IN_ABS = /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/Dynamics/Contacts/b2EdgeAndCircleContact.cpp
   OBJECT_DIR = Box2D/CMakeFiles/box2d.dir
   OBJECT_FILE_DIR = Box2D/CMakeFiles/box2d.dir/Dynamics/Contacts
 build Box2D/CMakeFiles/box2d.dir/Dynamics/Contacts/b2EdgeAndPolygonContact.cpp.o: CXX_COMPILER__box2d /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/Dynamics/Contacts/b2EdgeAndPolygonContact.cpp
   DEP_FILE = Box2D/CMakeFiles/box2d.dir/Dynamics/Contacts/b2EdgeAndPolygonContact.cpp.o.d
-  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Oz -DNDEBUG  -fPIC
+  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Os -DNDEBUG  -fPIC
   INCLUDES = -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/nanovg -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/. -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/include -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/.. -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward
   IN_ABS = /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/Dynamics/Contacts/b2EdgeAndPolygonContact.cpp
   OBJECT_DIR = Box2D/CMakeFiles/box2d.dir
   OBJECT_FILE_DIR = Box2D/CMakeFiles/box2d.dir/Dynamics/Contacts
 build Box2D/CMakeFiles/box2d.dir/Dynamics/Contacts/b2PolygonAndCircleContact.cpp.o: CXX_COMPILER__box2d /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/Dynamics/Contacts/b2PolygonAndCircleContact.cpp
   DEP_FILE = Box2D/CMakeFiles/box2d.dir/Dynamics/Contacts/b2PolygonAndCircleContact.cpp.o.d
-  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Oz -DNDEBUG  -fPIC
+  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Os -DNDEBUG  -fPIC
   INCLUDES = -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/nanovg -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/. -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/include -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/.. -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward
   IN_ABS = /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/Dynamics/Contacts/b2PolygonAndCircleContact.cpp
   OBJECT_DIR = Box2D/CMakeFiles/box2d.dir
   OBJECT_FILE_DIR = Box2D/CMakeFiles/box2d.dir/Dynamics/Contacts
 build Box2D/CMakeFiles/box2d.dir/Dynamics/Contacts/b2PolygonContact.cpp.o: CXX_COMPILER__box2d /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/Dynamics/Contacts/b2PolygonContact.cpp
   DEP_FILE = Box2D/CMakeFiles/box2d.dir/Dynamics/Contacts/b2PolygonContact.cpp.o.d
-  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Oz -DNDEBUG  -fPIC
+  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Os -DNDEBUG  -fPIC
   INCLUDES = -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/nanovg -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/. -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/include -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/.. -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward
   IN_ABS = /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/Dynamics/Contacts/b2PolygonContact.cpp
   OBJECT_DIR = Box2D/CMakeFiles/box2d.dir
   OBJECT_FILE_DIR = Box2D/CMakeFiles/box2d.dir/Dynamics/Contacts
 build Box2D/CMakeFiles/box2d.dir/Dynamics/Joints/b2DistanceJoint.cpp.o: CXX_COMPILER__box2d /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/Dynamics/Joints/b2DistanceJoint.cpp
   DEP_FILE = Box2D/CMakeFiles/box2d.dir/Dynamics/Joints/b2DistanceJoint.cpp.o.d
-  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Oz -DNDEBUG  -fPIC
+  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Os -DNDEBUG  -fPIC
   INCLUDES = -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/nanovg -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/. -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/include -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/.. -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward
   IN_ABS = /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/Dynamics/Joints/b2DistanceJoint.cpp
   OBJECT_DIR = Box2D/CMakeFiles/box2d.dir
   OBJECT_FILE_DIR = Box2D/CMakeFiles/box2d.dir/Dynamics/Joints
 build Box2D/CMakeFiles/box2d.dir/Dynamics/Joints/b2FrictionJoint.cpp.o: CXX_COMPILER__box2d /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/Dynamics/Joints/b2FrictionJoint.cpp
   DEP_FILE = Box2D/CMakeFiles/box2d.dir/Dynamics/Joints/b2FrictionJoint.cpp.o.d
-  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Oz -DNDEBUG  -fPIC
+  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Os -DNDEBUG  -fPIC
   INCLUDES = -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/nanovg -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/. -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/include -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/.. -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward
   IN_ABS = /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/Dynamics/Joints/b2FrictionJoint.cpp
   OBJECT_DIR = Box2D/CMakeFiles/box2d.dir
   OBJECT_FILE_DIR = Box2D/CMakeFiles/box2d.dir/Dynamics/Joints
 build Box2D/CMakeFiles/box2d.dir/Dynamics/Joints/b2GearJoint.cpp.o: CXX_COMPILER__box2d /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/Dynamics/Joints/b2GearJoint.cpp
   DEP_FILE = Box2D/CMakeFiles/box2d.dir/Dynamics/Joints/b2GearJoint.cpp.o.d
-  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Oz -DNDEBUG  -fPIC
+  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Os -DNDEBUG  -fPIC
   INCLUDES = -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/nanovg -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/. -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/include -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/.. -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward
   IN_ABS = /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/Dynamics/Joints/b2GearJoint.cpp
   OBJECT_DIR = Box2D/CMakeFiles/box2d.dir
   OBJECT_FILE_DIR = Box2D/CMakeFiles/box2d.dir/Dynamics/Joints
 build Box2D/CMakeFiles/box2d.dir/Dynamics/Joints/b2Joint.cpp.o: CXX_COMPILER__box2d /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/Dynamics/Joints/b2Joint.cpp
   DEP_FILE = Box2D/CMakeFiles/box2d.dir/Dynamics/Joints/b2Joint.cpp.o.d
-  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Oz -DNDEBUG  -fPIC
+  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Os -DNDEBUG  -fPIC
   INCLUDES = -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/nanovg -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/. -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/include -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/.. -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward
   IN_ABS = /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/Dynamics/Joints/b2Joint.cpp
   OBJECT_DIR = Box2D/CMakeFiles/box2d.dir
   OBJECT_FILE_DIR = Box2D/CMakeFiles/box2d.dir/Dynamics/Joints
 build Box2D/CMakeFiles/box2d.dir/Dynamics/Joints/b2MouseJoint.cpp.o: CXX_COMPILER__box2d /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/Dynamics/Joints/b2MouseJoint.cpp
   DEP_FILE = Box2D/CMakeFiles/box2d.dir/Dynamics/Joints/b2MouseJoint.cpp.o.d
-  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Oz -DNDEBUG  -fPIC
+  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Os -DNDEBUG  -fPIC
   INCLUDES = -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/nanovg -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/. -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/include -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/.. -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward
   IN_ABS = /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/Dynamics/Joints/b2MouseJoint.cpp
   OBJECT_DIR = Box2D/CMakeFiles/box2d.dir
   OBJECT_FILE_DIR = Box2D/CMakeFiles/box2d.dir/Dynamics/Joints
 build Box2D/CMakeFiles/box2d.dir/Dynamics/Joints/b2MotorJoint.cpp.o: CXX_COMPILER__box2d /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/Dynamics/Joints/b2MotorJoint.cpp
   DEP_FILE = Box2D/CMakeFiles/box2d.dir/Dynamics/Joints/b2MotorJoint.cpp.o.d
-  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Oz -DNDEBUG  -fPIC
+  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Os -DNDEBUG  -fPIC
   INCLUDES = -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/nanovg -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/. -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/include -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/.. -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward
   IN_ABS = /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/Dynamics/Joints/b2MotorJoint.cpp
   OBJECT_DIR = Box2D/CMakeFiles/box2d.dir
   OBJECT_FILE_DIR = Box2D/CMakeFiles/box2d.dir/Dynamics/Joints
 build Box2D/CMakeFiles/box2d.dir/Dynamics/Joints/b2PrismaticJoint.cpp.o: CXX_COMPILER__box2d /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/Dynamics/Joints/b2PrismaticJoint.cpp
   DEP_FILE = Box2D/CMakeFiles/box2d.dir/Dynamics/Joints/b2PrismaticJoint.cpp.o.d
-  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Oz -DNDEBUG  -fPIC
+  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Os -DNDEBUG  -fPIC
   INCLUDES = -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/nanovg -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/. -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/include -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/.. -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward
   IN_ABS = /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/Dynamics/Joints/b2PrismaticJoint.cpp
   OBJECT_DIR = Box2D/CMakeFiles/box2d.dir
   OBJECT_FILE_DIR = Box2D/CMakeFiles/box2d.dir/Dynamics/Joints
 build Box2D/CMakeFiles/box2d.dir/Dynamics/Joints/b2PulleyJoint.cpp.o: CXX_COMPILER__box2d /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/Dynamics/Joints/b2PulleyJoint.cpp
   DEP_FILE = Box2D/CMakeFiles/box2d.dir/Dynamics/Joints/b2PulleyJoint.cpp.o.d
-  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Oz -DNDEBUG  -fPIC
+  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Os -DNDEBUG  -fPIC
   INCLUDES = -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/nanovg -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/. -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/include -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/.. -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward
   IN_ABS = /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/Dynamics/Joints/b2PulleyJoint.cpp
   OBJECT_DIR = Box2D/CMakeFiles/box2d.dir
   OBJECT_FILE_DIR = Box2D/CMakeFiles/box2d.dir/Dynamics/Joints
 build Box2D/CMakeFiles/box2d.dir/Dynamics/Joints/b2RevoluteJoint.cpp.o: CXX_COMPILER__box2d /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/Dynamics/Joints/b2RevoluteJoint.cpp
   DEP_FILE = Box2D/CMakeFiles/box2d.dir/Dynamics/Joints/b2RevoluteJoint.cpp.o.d
-  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Oz -DNDEBUG  -fPIC
+  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Os -DNDEBUG  -fPIC
   INCLUDES = -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/nanovg -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/. -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/include -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/.. -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward
   IN_ABS = /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/Dynamics/Joints/b2RevoluteJoint.cpp
   OBJECT_DIR = Box2D/CMakeFiles/box2d.dir
   OBJECT_FILE_DIR = Box2D/CMakeFiles/box2d.dir/Dynamics/Joints
 build Box2D/CMakeFiles/box2d.dir/Dynamics/Joints/b2RopeJoint.cpp.o: CXX_COMPILER__box2d /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/Dynamics/Joints/b2RopeJoint.cpp
   DEP_FILE = Box2D/CMakeFiles/box2d.dir/Dynamics/Joints/b2RopeJoint.cpp.o.d
-  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Oz -DNDEBUG  -fPIC
+  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Os -DNDEBUG  -fPIC
   INCLUDES = -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/nanovg -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/. -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/include -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/.. -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward
   IN_ABS = /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/Dynamics/Joints/b2RopeJoint.cpp
   OBJECT_DIR = Box2D/CMakeFiles/box2d.dir
   OBJECT_FILE_DIR = Box2D/CMakeFiles/box2d.dir/Dynamics/Joints
 build Box2D/CMakeFiles/box2d.dir/Dynamics/Joints/b2WeldJoint.cpp.o: CXX_COMPILER__box2d /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/Dynamics/Joints/b2WeldJoint.cpp
   DEP_FILE = Box2D/CMakeFiles/box2d.dir/Dynamics/Joints/b2WeldJoint.cpp.o.d
-  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Oz -DNDEBUG  -fPIC
+  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Os -DNDEBUG  -fPIC
   INCLUDES = -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/nanovg -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/. -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/include -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/.. -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward
   IN_ABS = /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/Dynamics/Joints/b2WeldJoint.cpp
   OBJECT_DIR = Box2D/CMakeFiles/box2d.dir
   OBJECT_FILE_DIR = Box2D/CMakeFiles/box2d.dir/Dynamics/Joints
 build Box2D/CMakeFiles/box2d.dir/Dynamics/Joints/b2WheelJoint.cpp.o: CXX_COMPILER__box2d /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/Dynamics/Joints/b2WheelJoint.cpp
   DEP_FILE = Box2D/CMakeFiles/box2d.dir/Dynamics/Joints/b2WheelJoint.cpp.o.d
-  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Oz -DNDEBUG  -fPIC
+  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Os -DNDEBUG  -fPIC
   INCLUDES = -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/nanovg -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/. -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/include -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/.. -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward
   IN_ABS = /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/Dynamics/Joints/b2WheelJoint.cpp
   OBJECT_DIR = Box2D/CMakeFiles/box2d.dir
   OBJECT_FILE_DIR = Box2D/CMakeFiles/box2d.dir/Dynamics/Joints
 build Box2D/CMakeFiles/box2d.dir/Dynamics/b2Body.cpp.o: CXX_COMPILER__box2d /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/Dynamics/b2Body.cpp
   DEP_FILE = Box2D/CMakeFiles/box2d.dir/Dynamics/b2Body.cpp.o.d
-  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Oz -DNDEBUG  -fPIC
+  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Os -DNDEBUG  -fPIC
   INCLUDES = -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/nanovg -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/. -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/include -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/.. -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward
   IN_ABS = /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/Dynamics/b2Body.cpp
   OBJECT_DIR = Box2D/CMakeFiles/box2d.dir
   OBJECT_FILE_DIR = Box2D/CMakeFiles/box2d.dir/Dynamics
 build Box2D/CMakeFiles/box2d.dir/Dynamics/b2ContactManager.cpp.o: CXX_COMPILER__box2d /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/Dynamics/b2ContactManager.cpp
   DEP_FILE = Box2D/CMakeFiles/box2d.dir/Dynamics/b2ContactManager.cpp.o.d
-  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Oz -DNDEBUG  -fPIC
+  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Os -DNDEBUG  -fPIC
   INCLUDES = -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/nanovg -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/. -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/include -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/.. -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward
   IN_ABS = /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/Dynamics/b2ContactManager.cpp
   OBJECT_DIR = Box2D/CMakeFiles/box2d.dir
   OBJECT_FILE_DIR = Box2D/CMakeFiles/box2d.dir/Dynamics
 build Box2D/CMakeFiles/box2d.dir/Dynamics/b2Fixture.cpp.o: CXX_COMPILER__box2d /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/Dynamics/b2Fixture.cpp
   DEP_FILE = Box2D/CMakeFiles/box2d.dir/Dynamics/b2Fixture.cpp.o.d
-  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Oz -DNDEBUG  -fPIC
+  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Os -DNDEBUG  -fPIC
   INCLUDES = -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/nanovg -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/. -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/include -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/.. -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward
   IN_ABS = /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/Dynamics/b2Fixture.cpp
   OBJECT_DIR = Box2D/CMakeFiles/box2d.dir
   OBJECT_FILE_DIR = Box2D/CMakeFiles/box2d.dir/Dynamics
 build Box2D/CMakeFiles/box2d.dir/Dynamics/b2Island.cpp.o: CXX_COMPILER__box2d /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/Dynamics/b2Island.cpp
   DEP_FILE = Box2D/CMakeFiles/box2d.dir/Dynamics/b2Island.cpp.o.d
-  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Oz -DNDEBUG  -fPIC
+  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Os -DNDEBUG  -fPIC
   INCLUDES = -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/nanovg -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/. -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/include -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/.. -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward
   IN_ABS = /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/Dynamics/b2Island.cpp
   OBJECT_DIR = Box2D/CMakeFiles/box2d.dir
   OBJECT_FILE_DIR = Box2D/CMakeFiles/box2d.dir/Dynamics
 build Box2D/CMakeFiles/box2d.dir/Dynamics/b2World.cpp.o: CXX_COMPILER__box2d /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/Dynamics/b2World.cpp
   DEP_FILE = Box2D/CMakeFiles/box2d.dir/Dynamics/b2World.cpp.o.d
-  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Oz -DNDEBUG  -fPIC
+  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Os -DNDEBUG  -fPIC
   INCLUDES = -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/nanovg -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/. -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/include -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/.. -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward
   IN_ABS = /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/Dynamics/b2World.cpp
   OBJECT_DIR = Box2D/CMakeFiles/box2d.dir
   OBJECT_FILE_DIR = Box2D/CMakeFiles/box2d.dir/Dynamics
 build Box2D/CMakeFiles/box2d.dir/Dynamics/b2WorldCallbacks.cpp.o: CXX_COMPILER__box2d /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/Dynamics/b2WorldCallbacks.cpp
   DEP_FILE = Box2D/CMakeFiles/box2d.dir/Dynamics/b2WorldCallbacks.cpp.o.d
-  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Oz -DNDEBUG  -fPIC
+  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Os -DNDEBUG  -fPIC
   INCLUDES = -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/nanovg -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/. -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/include -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/.. -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward
   IN_ABS = /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/Dynamics/b2WorldCallbacks.cpp
   OBJECT_DIR = Box2D/CMakeFiles/box2d.dir
   OBJECT_FILE_DIR = Box2D/CMakeFiles/box2d.dir/Dynamics
 build Box2D/CMakeFiles/box2d.dir/Rope/b2Rope.cpp.o: CXX_COMPILER__box2d /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/Rope/b2Rope.cpp
   DEP_FILE = Box2D/CMakeFiles/box2d.dir/Rope/b2Rope.cpp.o.d
-  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Oz -DNDEBUG  -fPIC
+  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Os -DNDEBUG  -fPIC
   INCLUDES = -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/nanovg -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/. -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/include -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/.. -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward
   IN_ABS = /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/Box2D/Rope/b2Rope.cpp
   OBJECT_DIR = Box2D/CMakeFiles/box2d.dir
@@ -462,7 +470,7 @@ build Box2D/CMakeFiles/box2d.dir/Rope/b2Rope.cpp.o: CXX_COMPILER__box2d /home/ol
 # Link the static library Box2D/libbox2d.a
 
 build Box2D/libbox2d.a: CXX_STATIC_LIBRARY_LINKER__box2d Box2D/CMakeFiles/box2d.dir/Collision/Shapes/b2ChainShape.cpp.o Box2D/CMakeFiles/box2d.dir/Collision/Shapes/b2CircleShape.cpp.o Box2D/CMakeFiles/box2d.dir/Collision/Shapes/b2EdgeShape.cpp.o Box2D/CMakeFiles/box2d.dir/Collision/Shapes/b2PolygonShape.cpp.o Box2D/CMakeFiles/box2d.dir/Collision/b2BroadPhase.cpp.o Box2D/CMakeFiles/box2d.dir/Collision/b2CollideCircle.cpp.o Box2D/CMakeFiles/box2d.dir/Collision/b2CollideEdge.cpp.o Box2D/CMakeFiles/box2d.dir/Collision/b2CollidePolygon.cpp.o Box2D/CMakeFiles/box2d.dir/Collision/b2Collision.cpp.o Box2D/CMakeFiles/box2d.dir/Collision/b2Distance.cpp.o Box2D/CMakeFiles/box2d.dir/Collision/b2DynamicTree.cpp.o Box2D/CMakeFiles/box2d.dir/Collision/b2TimeOfImpact.cpp.o Box2D/CMakeFiles/box2d.dir/Common/b2BlockAllocator.cpp.o Box2D/CMakeFiles/box2d.dir/Common/b2Draw.cpp.o Box2D/CMakeFiles/box2d.dir/Common/b2Math.cpp.o Box2D/CMakeFiles/box2d.dir/Common/b2Settings.cpp.o Box2D/CMakeFiles/box2d.dir/Common/b2StackAllocator.cpp.o Box2D/CMakeFiles/box2d.dir/Common/b2Timer.cpp.o Box2D/CMakeFiles/box2d.dir/Dynamics/Contacts/b2ChainAndCircleContact.cpp.o Box2D/CMakeFiles/box2d.dir/Dynamics/Contacts/b2ChainAndPolygonContact.cpp.o Box2D/CMakeFiles/box2d.dir/Dynamics/Contacts/b2CircleContact.cpp.o Box2D/CMakeFiles/box2d.dir/Dynamics/Contacts/b2Contact.cpp.o Box2D/CMakeFiles/box2d.dir/Dynamics/Contacts/b2ContactSolver.cpp.o Box2D/CMakeFiles/box2d.dir/Dynamics/Contacts/b2EdgeAndCircleContact.cpp.o Box2D/CMakeFiles/box2d.dir/Dynamics/Contacts/b2EdgeAndPolygonContact.cpp.o Box2D/CMakeFiles/box2d.dir/Dynamics/Contacts/b2PolygonAndCircleContact.cpp.o Box2D/CMakeFiles/box2d.dir/Dynamics/Contacts/b2PolygonContact.cpp.o Box2D/CMakeFiles/box2d.dir/Dynamics/Joints/b2DistanceJoint.cpp.o Box2D/CMakeFiles/box2d.dir/Dynamics/Joints/b2FrictionJoint.cpp.o Box2D/CMakeFiles/box2d.dir/Dynamics/Joints/b2GearJoint.cpp.o Box2D/CMakeFiles/box2d.dir/Dynamics/Joints/b2Joint.cpp.o Box2D/CMakeFiles/box2d.dir/Dynamics/Joints/b2MouseJoint.cpp.o Box2D/CMakeFiles/box2d.dir/Dynamics/Joints/b2MotorJoint.cpp.o Box2D/CMakeFiles/box2d.dir/Dynamics/Joints/b2PrismaticJoint.cpp.o Box2D/CMakeFiles/box2d.dir/Dynamics/Joints/b2PulleyJoint.cpp.o Box2D/CMakeFiles/box2d.dir/Dynamics/Joints/b2RevoluteJoint.cpp.o Box2D/CMakeFiles/box2d.dir/Dynamics/Joints/b2RopeJoint.cpp.o Box2D/CMakeFiles/box2d.dir/Dynamics/Joints/b2WeldJoint.cpp.o Box2D/CMakeFiles/box2d.dir/Dynamics/Joints/b2WheelJoint.cpp.o Box2D/CMakeFiles/box2d.dir/Dynamics/b2Body.cpp.o Box2D/CMakeFiles/box2d.dir/Dynamics/b2ContactManager.cpp.o Box2D/CMakeFiles/box2d.dir/Dynamics/b2Fixture.cpp.o Box2D/CMakeFiles/box2d.dir/Dynamics/b2Island.cpp.o Box2D/CMakeFiles/box2d.dir/Dynamics/b2World.cpp.o Box2D/CMakeFiles/box2d.dir/Dynamics/b2WorldCallbacks.cpp.o Box2D/CMakeFiles/box2d.dir/Rope/b2Rope.cpp.o
-  LANGUAGE_COMPILE_FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Oz -DNDEBUG
+  LANGUAGE_COMPILE_FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=16 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -Os -DNDEBUG
   OBJECT_DIR = Box2D/CMakeFiles/box2d.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -472,9 +480,9 @@ build Box2D/libbox2d.a: CXX_STATIC_LIBRARY_LINKER__box2d Box2D/CMakeFiles/box2d.
 # Target aliases.
 
 build box2d: phony Box2D/libbox2d.a
-build gl2jni: phony /home/oleh/Documents/projects/NanoVgAndroid/app/build/intermediates/cmake/release/obj/armeabi-v7a/libgl2jni.so
 build libbox2d.a: phony Box2D/libbox2d.a
-build libgl2jni.so: phony /home/oleh/Documents/projects/NanoVgAndroid/app/build/intermediates/cmake/release/obj/armeabi-v7a/libgl2jni.so
+build libnanoLib.so: phony /home/oleh/Documents/projects/NanoVgAndroid/app/build/intermediates/cmake/release/obj/armeabi-v7a/libnanoLib.so
+build nanoLib: phony /home/oleh/Documents/projects/NanoVgAndroid/app/build/intermediates/cmake/release/obj/armeabi-v7a/libnanoLib.so
 # =============================================================================
 # Folder targets.
 
@@ -492,7 +500,7 @@ build  Box2D/all: phony box2d
 #############################################
 # The main all target.
 
-build all: phony /home/oleh/Documents/projects/NanoVgAndroid/app/build/intermediates/cmake/release/obj/armeabi-v7a/libgl2jni.so Box2D/libbox2d.a
+build all: phony /home/oleh/Documents/projects/NanoVgAndroid/app/build/intermediates/cmake/release/obj/armeabi-v7a/libnanoLib.so Box2D/libbox2d.a
 
 #############################################
 # Make the all target the default.

@@ -199,7 +199,7 @@ Project_SOURCE_DIR:STATIC=/home/oleh/Documents/projects/NanoVgAndroid/app/src/ma
 box2d_LIB_DEPENDS:STATIC=
 
 //Dependencies for the target
-gl2jni_LIB_DEPENDS:STATIC=general;box2d;general;android;general;GLESv2;general;log;
+nanoLib_LIB_DEPENDS:STATIC=general;box2d;general;android;general;GLESv2;general;log;
 
 
 ########################

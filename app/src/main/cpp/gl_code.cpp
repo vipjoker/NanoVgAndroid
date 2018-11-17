@@ -1,20 +1,3 @@
-/*
- * Copyright (C) 2009 The Android Open Source Project
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
-// OpenGL ES 2.0 code
 
 #include <jni.h>
 #include <android/log.h>
@@ -31,7 +14,7 @@
 #define  LOGI(...)  __android_log_print(ANDROID_LOG_INFO,LOG_TAG,__VA_ARGS__)
 #define  LOGE(...)  __android_log_print(ANDROID_LOG_ERROR,LOG_TAG,__VA_ARGS__)
 
-#define NANOVG_GLES2_IMPLEMENTATION   // Use GL2 es implementation.
+#define NANOVG_GLES2_IMPLEMENTATION
 
 #include "nanovg/nanovg.h"
 #include "nanovg/nanovg_gl.h"
@@ -205,61 +188,61 @@ void renderFrame(float dt) {
     glClear(GL_DEPTH_BUFFER_BIT | GL_COLOR_BUFFER_BIT | GL_STENCIL_BUFFER_BIT);
     checkGlError("glClear");
 
-//    nvgBeginFrame(vg, w, h, w/h);
-//
-//
-//    nvgEndFrame(vg);
-
-//    if(!fontPath.empty() && !fontLoaded ){
-//        int re = nvgCreateFont(vg,"sans-bold",fontPath.c_str());
-//        LOGI("FONT PATH FOUND %s result %d",fontPath.c_str(),re);
-//        fontLoaded = true;
-//    }
+    nvgBeginFrame(vg, w, h, w/h);
 
 
-//    update();
+    nvgEndFrame(vg);
 
-//    nvgBeginFrame(vg, w, h, w > h ? w / h : h / w);
-//    if(fontLoaded){
-//        nvgBeginPath(vg);
-//        nvgFontFace(vg,"Varela");
-//        nvgText(vg,100,100,"HELLO WORLD",NULL);
-//        nvgFill(vg);
-//    }
-//    drawWindow(vg,"HELLO WORLD" ,100,100,500,500);
+    if(!fontPath.empty() && !fontLoaded ){
+        int re = nvgCreateFont(vg,"sans-bold",fontPath.c_str());
+        LOGI("FONT PATH FOUND %s result %d",fontPath.c_str(),re);
+        fontLoaded = true;
+    }
 
 
-    //nvgTransformTranslate(vg,angle,0);
+    update();
+
+    nvgBeginFrame(vg, w, h, w > h ? w / h : h / w);
+    if(fontLoaded){
+        nvgBeginPath(vg);
+        nvgFontFace(vg,"Varela");
+        nvgText(vg,100,100,"HELLO WORLD",NULL);
+        nvgFill(vg);
+    }
+    drawWindow(vg,"HELLO WORLD" ,100,100,500,500);
+
+
+//    nvgTransformTranslate(vg,angle,0);
 
 
 
-//    world->Step(dt, 8, 3);
-//    world->DrawDebugData();
-   // nvgSamplePointer->draw();
-//
-//    nvgBeginPath(vg);
-//    nvgMoveTo(vg, verticeX(90.f), verticeY(90.f));
-//    nvgLineTo(vg, verticeX(90.f + 120.0f), verticeY(90.0f + 120.0f));
-//    nvgLineTo(vg, verticeX(90.f + 240.f), verticeY(90.0f + 240.0f) );
-//    nvgClosePath(vg);
-//    nvgFillColor(vg, nvgRGBA(255,192,0,255));
-//    nvgFill(vg);
-//    nvgFillColor(vg, nvgRGBA(255,192,0,255));
-//
-//
-//
-//
-//    nvgBeginPath(vg);
-//    nvgRect(vg, 10,10,100,200);
-//    nvgFillColor(vg, nvgRGBA(255,0,0,255));
-//    nvgFill(vg);
-//
-//    nvgBeginPath(vg);
-//    nvgCircle(vg,x2++,50,50);
-//    nvgFillColor(vg,nvgRGB(200,100,200));
-//    nvgFill(vg);
-//
-//
+    world->Step(dt, 8, 3);
+    world->DrawDebugData();
+    nvgSamplePointer->draw();
+
+    nvgBeginPath(vg);
+    nvgMoveTo(vg, verticeX(90.f), verticeY(90.f));
+    nvgLineTo(vg, verticeX(90.f + 120.0f), verticeY(90.0f + 120.0f));
+    nvgLineTo(vg, verticeX(90.f + 240.f), verticeY(90.0f + 240.0f) );
+    nvgClosePath(vg);
+    nvgFillColor(vg, nvgRGBA(255,192,0,255));
+    nvgFill(vg);
+    nvgFillColor(vg, nvgRGBA(255,192,0,255));
+
+
+
+
+    nvgBeginPath(vg);
+    nvgRect(vg, 10,10,100,200);
+    nvgFillColor(vg, nvgRGBA(255,0,0,255));
+    nvgFill(vg);
+
+    nvgBeginPath(vg);
+    nvgCircle(vg,x2++,50,50);
+    nvgFillColor(vg,nvgRGB(200,100,200));
+    nvgFill(vg);
+
+
 angle+=dt;
 
 //    for(int i = 0 ; i < 50;i++){

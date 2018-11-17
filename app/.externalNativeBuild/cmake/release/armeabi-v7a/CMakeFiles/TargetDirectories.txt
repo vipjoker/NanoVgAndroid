@@ -1,6 +1,6 @@
 /home/oleh/Documents/projects/NanoVgAndroid/app/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/edit_cache.dir
 /home/oleh/Documents/projects/NanoVgAndroid/app/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/rebuild_cache.dir
-/home/oleh/Documents/projects/NanoVgAndroid/app/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/gl2jni.dir
+/home/oleh/Documents/projects/NanoVgAndroid/app/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/nanoLib.dir
 /home/oleh/Documents/projects/NanoVgAndroid/app/.externalNativeBuild/cmake/release/armeabi-v7a/Box2D/CMakeFiles/edit_cache.dir
 /home/oleh/Documents/projects/NanoVgAndroid/app/.externalNativeBuild/cmake/release/armeabi-v7a/Box2D/CMakeFiles/rebuild_cache.dir
 /home/oleh/Documents/projects/NanoVgAndroid/app/.externalNativeBuild/cmake/release/armeabi-v7a/Box2D/CMakeFiles/box2d.dir

@@ -22,7 +22,7 @@ rule CUSTOM_COMMAND
 #############################################
 # Rule for compiling C files.
 
-rule C_COMPILER__gl2jni
+rule C_COMPILER__nanoLib
   depfile = $DEP_FILE
   deps = gcc
   command = /home/oleh/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang  --target=x86_64-none-linux-android --gcc-toolchain=/home/oleh/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64 --sysroot=/home/oleh/Android/Sdk/ndk-bundle/sysroot $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out   -c $IN_ABS
@@ -32,7 +32,7 @@ rule C_COMPILER__gl2jni
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__gl2jni
+rule CXX_COMPILER__nanoLib
   depfile = $DEP_FILE
   deps = gcc
   command = /home/oleh/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++  --target=x86_64-none-linux-android --gcc-toolchain=/home/oleh/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64 --sysroot=/home/oleh/Android/Sdk/ndk-bundle/sysroot  $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $IN_ABS
@@ -42,7 +42,7 @@ rule CXX_COMPILER__gl2jni
 #############################################
 # Rule for linking CXX shared library.
 
-rule CXX_SHARED_LIBRARY_LINKER__gl2jni
+rule CXX_SHARED_LIBRARY_LINKER__nanoLib
   command = $PRE_LINK && /home/oleh/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++  --target=x86_64-none-linux-android --gcc-toolchain=/home/oleh/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64 --sysroot=/home/oleh/Android/Sdk/ndk-bundle/sysroot -fPIC $LANGUAGE_COMPILE_FLAGS $ARCH_FLAGS $LINK_FLAGS -shared $SONAME_FLAG$SONAME -o $TARGET_FILE $in $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX shared library $TARGET_FILE
   restat = $RESTAT

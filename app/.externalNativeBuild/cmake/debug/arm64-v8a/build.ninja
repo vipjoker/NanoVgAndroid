@@ -49,80 +49,88 @@ build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
   restat = 1
 build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
-# Object build statements for SHARED_LIBRARY target gl2jni
+# Object build statements for SHARED_LIBRARY target nanoLib
 
 
 #############################################
-# Order-only phony target for gl2jni
+# Order-only phony target for nanoLib
 
-build cmake_order_depends_target_gl2jni: phony || Box2D/libbox2d.a
-build CMakeFiles/gl2jni.dir/nanovg/nanovg.c.o: C_COMPILER__gl2jni /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/nanovg/nanovg.c || cmake_order_depends_target_gl2jni
-  DEFINES = -Dgl2jni_EXPORTS
-  DEP_FILE = CMakeFiles/gl2jni.dir/nanovg/nanovg.c.o.d
+build cmake_order_depends_target_nanoLib: phony || Box2D/libbox2d.a
+build CMakeFiles/nanoLib.dir/nanovg/nanovg.c.o: C_COMPILER__nanoLib /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/nanovg/nanovg.c || cmake_order_depends_target_nanoLib
+  DEFINES = -DnanoLib_EXPORTS
+  DEP_FILE = CMakeFiles/nanoLib.dir/nanovg/nanovg.c.o.d
   FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC
   INCLUDES = -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/nanovg -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/. -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/include
   IN_ABS = /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/nanovg/nanovg.c
-  OBJECT_DIR = CMakeFiles/gl2jni.dir
-  OBJECT_FILE_DIR = CMakeFiles/gl2jni.dir/nanovg
-build CMakeFiles/gl2jni.dir/gl_code.cpp.o: CXX_COMPILER__gl2jni /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/gl_code.cpp || cmake_order_depends_target_gl2jni
-  DEFINES = -Dgl2jni_EXPORTS
-  DEP_FILE = CMakeFiles/gl2jni.dir/gl_code.cpp.o.d
+  OBJECT_DIR = CMakeFiles/nanoLib.dir
+  OBJECT_FILE_DIR = CMakeFiles/nanoLib.dir/nanovg
+build CMakeFiles/nanoLib.dir/gl_code.cpp.o: CXX_COMPILER__nanoLib /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/gl_code.cpp || cmake_order_depends_target_nanoLib
+  DEFINES = -DnanoLib_EXPORTS
+  DEP_FILE = CMakeFiles/nanoLib.dir/gl_code.cpp.o.d
   FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -O0 -fno-limit-debug-info  -fPIC
   INCLUDES = -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/nanovg -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/. -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/arm64-v8a/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward
   IN_ABS = /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/gl_code.cpp
-  OBJECT_DIR = CMakeFiles/gl2jni.dir
-  OBJECT_FILE_DIR = CMakeFiles/gl2jni.dir
-build CMakeFiles/gl2jni.dir/src/b2Renderer.cpp.o: CXX_COMPILER__gl2jni /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/src/b2Renderer.cpp || cmake_order_depends_target_gl2jni
-  DEFINES = -Dgl2jni_EXPORTS
-  DEP_FILE = CMakeFiles/gl2jni.dir/src/b2Renderer.cpp.o.d
+  OBJECT_DIR = CMakeFiles/nanoLib.dir
+  OBJECT_FILE_DIR = CMakeFiles/nanoLib.dir
+build CMakeFiles/nanoLib.dir/src/b2Renderer.cpp.o: CXX_COMPILER__nanoLib /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/src/b2Renderer.cpp || cmake_order_depends_target_nanoLib
+  DEFINES = -DnanoLib_EXPORTS
+  DEP_FILE = CMakeFiles/nanoLib.dir/src/b2Renderer.cpp.o.d
   FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -O0 -fno-limit-debug-info  -fPIC
   INCLUDES = -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/nanovg -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/. -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/arm64-v8a/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward
   IN_ABS = /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/src/b2Renderer.cpp
-  OBJECT_DIR = CMakeFiles/gl2jni.dir
-  OBJECT_FILE_DIR = CMakeFiles/gl2jni.dir/src
-build CMakeFiles/gl2jni.dir/src/bodyCreator.cpp.o: CXX_COMPILER__gl2jni /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/src/bodyCreator.cpp || cmake_order_depends_target_gl2jni
-  DEFINES = -Dgl2jni_EXPORTS
-  DEP_FILE = CMakeFiles/gl2jni.dir/src/bodyCreator.cpp.o.d
+  OBJECT_DIR = CMakeFiles/nanoLib.dir
+  OBJECT_FILE_DIR = CMakeFiles/nanoLib.dir/src
+build CMakeFiles/nanoLib.dir/src/bodyCreator.cpp.o: CXX_COMPILER__nanoLib /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/src/bodyCreator.cpp || cmake_order_depends_target_nanoLib
+  DEFINES = -DnanoLib_EXPORTS
+  DEP_FILE = CMakeFiles/nanoLib.dir/src/bodyCreator.cpp.o.d
   FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -O0 -fno-limit-debug-info  -fPIC
   INCLUDES = -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/nanovg -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/. -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/arm64-v8a/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward
   IN_ABS = /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/src/bodyCreator.cpp
-  OBJECT_DIR = CMakeFiles/gl2jni.dir
-  OBJECT_FILE_DIR = CMakeFiles/gl2jni.dir/src
-build CMakeFiles/gl2jni.dir/src/NvgSample.cpp.o: CXX_COMPILER__gl2jni /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/src/NvgSample.cpp || cmake_order_depends_target_gl2jni
-  DEFINES = -Dgl2jni_EXPORTS
-  DEP_FILE = CMakeFiles/gl2jni.dir/src/NvgSample.cpp.o.d
+  OBJECT_DIR = CMakeFiles/nanoLib.dir
+  OBJECT_FILE_DIR = CMakeFiles/nanoLib.dir/src
+build CMakeFiles/nanoLib.dir/src/NvgSample.cpp.o: CXX_COMPILER__nanoLib /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/src/NvgSample.cpp || cmake_order_depends_target_nanoLib
+  DEFINES = -DnanoLib_EXPORTS
+  DEP_FILE = CMakeFiles/nanoLib.dir/src/NvgSample.cpp.o.d
   FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -O0 -fno-limit-debug-info  -fPIC
   INCLUDES = -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/nanovg -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/. -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/arm64-v8a/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward
   IN_ABS = /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/src/NvgSample.cpp
-  OBJECT_DIR = CMakeFiles/gl2jni.dir
-  OBJECT_FILE_DIR = CMakeFiles/gl2jni.dir/src
-build CMakeFiles/gl2jni.dir/src/Shapes.cpp.o: CXX_COMPILER__gl2jni /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/src/Shapes.cpp || cmake_order_depends_target_gl2jni
-  DEFINES = -Dgl2jni_EXPORTS
-  DEP_FILE = CMakeFiles/gl2jni.dir/src/Shapes.cpp.o.d
+  OBJECT_DIR = CMakeFiles/nanoLib.dir
+  OBJECT_FILE_DIR = CMakeFiles/nanoLib.dir/src
+build CMakeFiles/nanoLib.dir/src/Shapes.cpp.o: CXX_COMPILER__nanoLib /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/src/Shapes.cpp || cmake_order_depends_target_nanoLib
+  DEFINES = -DnanoLib_EXPORTS
+  DEP_FILE = CMakeFiles/nanoLib.dir/src/Shapes.cpp.o.d
   FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -O0 -fno-limit-debug-info  -fPIC
   INCLUDES = -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/nanovg -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/. -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/arm64-v8a/include -isystem /home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward
   IN_ABS = /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/src/Shapes.cpp
-  OBJECT_DIR = CMakeFiles/gl2jni.dir
-  OBJECT_FILE_DIR = CMakeFiles/gl2jni.dir/src
+  OBJECT_DIR = CMakeFiles/nanoLib.dir
+  OBJECT_FILE_DIR = CMakeFiles/nanoLib.dir/src
+build CMakeFiles/nanoLib.dir/android_fopen.c.o: C_COMPILER__nanoLib /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/android_fopen.c || cmake_order_depends_target_nanoLib
+  DEFINES = -DnanoLib_EXPORTS
+  DEP_FILE = CMakeFiles/nanoLib.dir/android_fopen.c.o.d
+  FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC
+  INCLUDES = -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/nanovg -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/. -I/home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/include
+  IN_ABS = /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/android_fopen.c
+  OBJECT_DIR = CMakeFiles/nanoLib.dir
+  OBJECT_FILE_DIR = CMakeFiles/nanoLib.dir
 
 # =============================================================================
-# Link build statements for SHARED_LIBRARY target gl2jni
+# Link build statements for SHARED_LIBRARY target nanoLib
 
 
 #############################################
-# Link the shared library /home/oleh/Documents/projects/NanoVgAndroid/app/build/intermediates/cmake/debug/obj/arm64-v8a/libgl2jni.so
+# Link the shared library /home/oleh/Documents/projects/NanoVgAndroid/app/build/intermediates/cmake/debug/obj/arm64-v8a/libnanoLib.so
 
-build /home/oleh/Documents/projects/NanoVgAndroid/app/build/intermediates/cmake/debug/obj/arm64-v8a/libgl2jni.so: CXX_SHARED_LIBRARY_LINKER__gl2jni CMakeFiles/gl2jni.dir/nanovg/nanovg.c.o CMakeFiles/gl2jni.dir/gl_code.cpp.o CMakeFiles/gl2jni.dir/src/b2Renderer.cpp.o CMakeFiles/gl2jni.dir/src/bodyCreator.cpp.o CMakeFiles/gl2jni.dir/src/NvgSample.cpp.o CMakeFiles/gl2jni.dir/src/Shapes.cpp.o | Box2D/libbox2d.a || Box2D/libbox2d.a
+build /home/oleh/Documents/projects/NanoVgAndroid/app/build/intermediates/cmake/debug/obj/arm64-v8a/libnanoLib.so: CXX_SHARED_LIBRARY_LINKER__nanoLib CMakeFiles/nanoLib.dir/nanovg/nanovg.c.o CMakeFiles/nanoLib.dir/gl_code.cpp.o CMakeFiles/nanoLib.dir/src/b2Renderer.cpp.o CMakeFiles/nanoLib.dir/src/bodyCreator.cpp.o CMakeFiles/nanoLib.dir/src/NvgSample.cpp.o CMakeFiles/nanoLib.dir/src/Shapes.cpp.o CMakeFiles/nanoLib.dir/android_fopen.c.o | Box2D/libbox2d.a || Box2D/libbox2d.a
   LANGUAGE_COMPILE_FLAGS = -isystem /home/oleh/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -O0 -fno-limit-debug-info
   LINK_FLAGS = -Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libatomic.a --sysroot /home/oleh/Android/Sdk/ndk-bundle/platforms/android-21/arch-arm64 -Wl,--build-id -Wl,--warn-shared-textrel -Wl,--fatal-warnings -Wl,--no-undefined -Wl,-z,noexecstack -Qunused-arguments -Wl,-z,relro -Wl,-z,now
   LINK_LIBRARIES = Box2D/libbox2d.a -landroid -lGLESv2 -llog -latomic -lm "/home/oleh/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/arm64-v8a/libgnustl_static.a"
-  OBJECT_DIR = CMakeFiles/gl2jni.dir
+  OBJECT_DIR = CMakeFiles/nanoLib.dir
   POST_BUILD = :
   PRE_LINK = :
-  SONAME = libgl2jni.so
+  SONAME = libnanoLib.so
   SONAME_FLAG = -Wl,-soname,
-  TARGET_FILE = /home/oleh/Documents/projects/NanoVgAndroid/app/build/intermediates/cmake/debug/obj/arm64-v8a/libgl2jni.so
-  TARGET_PDB = gl2jni.so.dbg
+  TARGET_FILE = /home/oleh/Documents/projects/NanoVgAndroid/app/build/intermediates/cmake/debug/obj/arm64-v8a/libnanoLib.so
+  TARGET_PDB = nanoLib.so.dbg
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
 # /home/oleh/Documents/projects/NanoVgAndroid/app/src/main/cpp/CMakeLists.txt
@@ -472,9 +480,9 @@ build Box2D/libbox2d.a: CXX_STATIC_LIBRARY_LINKER__box2d Box2D/CMakeFiles/box2d.
 # Target aliases.
 
 build box2d: phony Box2D/libbox2d.a
-build gl2jni: phony /home/oleh/Documents/projects/NanoVgAndroid/app/build/intermediates/cmake/debug/obj/arm64-v8a/libgl2jni.so
 build libbox2d.a: phony Box2D/libbox2d.a
-build libgl2jni.so: phony /home/oleh/Documents/projects/NanoVgAndroid/app/build/intermediates/cmake/debug/obj/arm64-v8a/libgl2jni.so
+build libnanoLib.so: phony /home/oleh/Documents/projects/NanoVgAndroid/app/build/intermediates/cmake/debug/obj/arm64-v8a/libnanoLib.so
+build nanoLib: phony /home/oleh/Documents/projects/NanoVgAndroid/app/build/intermediates/cmake/debug/obj/arm64-v8a/libnanoLib.so
 # =============================================================================
 # Folder targets.
 
@@ -492,7 +500,7 @@ build  Box2D/all: phony box2d
 #############################################
 # The main all target.
 
-build all: phony /home/oleh/Documents/projects/NanoVgAndroid/app/build/intermediates/cmake/debug/obj/arm64-v8a/libgl2jni.so Box2D/libbox2d.a
+build all: phony /home/oleh/Documents/projects/NanoVgAndroid/app/build/intermediates/cmake/debug/obj/arm64-v8a/libnanoLib.so Box2D/libbox2d.a
 
 #############################################
 # Make the all target the default.

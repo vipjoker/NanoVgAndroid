@@ -23,7 +23,7 @@ import android.content.res.AssetManager;
 public class JNI {
 
     static {
-     System.loadLibrary("gl2jni");
+     System.loadLibrary("nanoLib");
     }
 
     public static native void setBackgroundColor(float R, float G, float B, float A);
@@ -34,10 +34,7 @@ public class JNI {
     public static native void onTouchMove(float x,float y);
     public static native void onTouchEnd();
 
-    /**
-     * @param width the current view width
-     * @param height the current view height
-     */
+
     public static native void init(int width, int height);
     public static native void step(float dt);
     public static native void setAssets(AssetManager manager);
